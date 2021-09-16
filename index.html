@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 
-<body>
-                  
-    <header class="header"> <!-- logo barra de navegacion y login -->             
+<body>              
+<header class="header">          <!-- logo barra de navegacion y login -->             
         <img src="/proyecto-m-dulo1/imagenes/logo HEADER.png" alt="Logo" class="logo">
              <ul class="nav">
                 <li>Planes</li>
@@ -19,15 +18,12 @@
             </ul>
             <button class="ingresar"> Ingresar <!--  loguin --></button>
         </nav>
-    </header>                  
-
-
-    <div class="home"><!-- mind HOME-->
+</header>                  
+    <div class="home">           <!-- mind HOME-->
         <h3>Diseños Excepxionales para Epresas Ambiciosas</h3>
         <p>La agencia gráfica digital que te contacta con tus clientes. Rever este texto.</p>
         <button class="botoncontactohome">Contacto</button>
     </div>         
-    
     
 <section class="seccionDePlanes"><!-- seccion PLANES -->
         <h3>Planes</h3>
@@ -58,8 +54,7 @@
     </grid> 
 </section>               
 
-
-    <section ><!-- seccion PORTFOLIO -->
+<section >                      <!-- seccion PORTFOLIO -->
         <h3>Portfolio</h3>
         <grid class="grid-container">
             <img src="/proyecto-m-dulo1/imagenes/1 WTF Posteo para redes sociales.png" alt="WTF Burger">
@@ -79,26 +74,27 @@
             <img src="/proyecto-m-dulo1/imagenes/15 AMERICAN WINGS Diseño de folleto.png" alt="American Wings"> 
             <img src="/proyecto-m-dulo1/imagenes/16 wok in box Diseño de packaging.png" alt="Wok in Box">     
         </grid>        
-    </section>                             
-    <footer> <!-- FOOTER  FORM DE CONTACTO -->
+</section>                              
+<footer>                        <!-- FOOTER  FORM DE CONTACTO -->
         <h3>Contacto</h3>
-        <p>Ingresá tus datos y nos contactaremos contigo a la brevedad</p>
-        <form>
+        
+        <form class="registro">
+            <p>Ingresá tus datos y nos contactaremos contigo a la brevedad</p>
             <div>
                 <label for="nombre">
                 <span>Nombre</span>
-                <input type="text" name="nombre" id="nombre" required>
+                <input class="cajasFormularios" type="text" name="nombre" id="nombre" placeholder=" Ingresá tu nombre" required>
                 </label>
             </div>
             <br>
             <div>
                 <label for="correo">
                 <span>Correo electrónico</span>
-                <input type="email" name="correo" id="correo">
+                <input class="cajasFormularios" type="email" name="correo" id="correo" placeholder=" Ingresá tu correo" required>
             </label>
             </div>
               <p>A qué rubro pertenece tu empresa?</p>
-              <select>
+              <select class="cajasFormularios">
                 <option value="Fútbol">Gastronómico</option>
                 <option value="Arte">Arte</option>
                 <option value="Audiovisual">Audiovisual</option>
@@ -112,11 +108,11 @@
                 <option value="Servicios en general">Servicios en general</option>
                 <option value="Administrativo">Administrativo</option>
               </select>
-
-
         </form>
+
         <button class="boton">Enviar</button>
-    </footer>
+</footer>
+<a href="#">Try hovering over me!</a>
 
   
 

@@ -14,7 +14,7 @@ html {
     --rosa: #FE2A3C;
     --celeste: #0AE9FE;
   }
-/*  HEADER Y MENU DE NAVEGACION  */
+                            /****  HEADER Y MENU DE NAVEGACION  */
   
  header {
     display: grid;
@@ -61,7 +61,8 @@ html {
   box-shadow:  0px 0px 20px 3px rgb(18, 0, 19);
   color:#F9CBD1; 
 }
-/*   PANTALLA PRINCIPAL  */
+                             /****   PANTALLA PRINCIPAL  */
+
 .home {
   background: url(/proyecto-m-dulo1/imagenes/fondo\ HOME.png);
   background-repeat: no-repeat;
@@ -115,7 +116,8 @@ h3 {
   text-align: center;
   margin-top: 20px;
 }
-/*   PANTALLA PLANES CARDS  */
+                            /****   PANTALLA PLANES CARDS  */
+
 .planes {
  display: grid;
  grid-template-columns:repeat(3, 1fr);
@@ -155,6 +157,16 @@ padding: 10px;
   padding: 5px;
   color: #1E0146;
 }
+.cards:hover {
+ 
+  transform: scale(1.1); /* Igual que: scaleX(0.7) scaleY(0.7) */
+  background-color:rgb(255, 230, 239);
+
+ 
+  
+  
+ 
+}
 button {
   border-radius: 30px;
   background-color: rgb(241, 230, 242);
@@ -183,7 +195,7 @@ button:active {
   box-shadow: 0px 0px 20px 3px rgb(18, 0, 19);
   color:rgb(241, 230, 242); 
 }
-/*   PANTALLA PORTFOLIO  */
+                            /****   PANTALLA PORTFOLIO  */
 
 .grid-container {
   display: grid;
@@ -203,6 +215,10 @@ button:active {
   width: 250px;
   height: 250px;
 }
+.grid-container img:hover {
+  transform: scale(1.03); 
+
+}
 section {
   display: grid;
   font-size: 2.5rem;
@@ -216,7 +232,8 @@ section h3 {
   color: #1E0146;
   text-align: center;
 }
-/*   PANTALLA FOOTER CON FORMULARIO DE CONTACTO  */
+                            /****   PANTALLA FOOTER CON FORMULARIO DE CONTACTO  */
+
 footer {
   background: rgb(30,1,70);
   background: linear-gradient(90deg, rgba(30,1,70,1) 0%, rgba(182,0,117,1) 77%);
@@ -232,16 +249,38 @@ footer h3 {
   padding: 10px;
   color:#ffffff
 }
+
 footer label {
+  
   color: var(--violetaclaro);
   font-size: 2rem;
   align-items: center;
+  
+}
+span{
+  font-size: 1.5rem;
+}
+.cajasFormularios {
+border-bottom: var(--violeta);
+background-color: var(--violetaclaro);
+border-style: none;
+padding: 4px;
+width: 400px;
+
+  
+}
+.registro {
+  width: 400px;
+  height: auto;
+  text-align: left;
+  align-content:center; 
 }
 footer p {
   font-size: 2rem;
   margin: 10px;
   padding: 10px;
   color:#ffffff;
+  text-align: center;
 }
 footer button:hover {
   background: rgb(30,1,70);
@@ -270,7 +309,6 @@ footer button{
   padding: 8px  25px 10px;
   color: var(--violeta);
 }
-
 
 /*   PANTALLA PLANES CARDS 
 
