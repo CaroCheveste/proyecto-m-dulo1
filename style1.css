@@ -238,7 +238,7 @@ footer {
   background: rgb(30,1,70);
   background: linear-gradient(90deg, rgba(30,1,70,1) 0%, rgba(182,0,117,1) 77%);
   width: 100%;
-  padding: 10px;
+  padding: 10px 250px;
   padding-bottom: 30px;
   display:block;
   text-align: center;
@@ -249,7 +249,6 @@ footer h3 {
   padding: 10px;
   color:#ffffff
 }
-
 footer label {
   
   color: var(--violetaclaro);
