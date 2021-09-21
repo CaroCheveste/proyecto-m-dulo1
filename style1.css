@@ -13,10 +13,10 @@ html {
     --violetaclaro: #F9CBD1;
     --rosa: #FE2A3C;
     --celeste: #0AE9FE;
-  }
+}
                             /****  HEADER Y MENU DE NAVEGACION  */
   
- header {
+.header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'logo nav ingresar';
@@ -26,7 +26,10 @@ html {
     font-size: 0.6rem;
     color: #ffffff;
     padding: 40px , 0px;
-
+    position:fixed;
+    width: 100%;
+    height: 100px;
+ 
 }
 .nav li {
     font-size: 1.7rem;
@@ -36,9 +39,11 @@ html {
     display: inline-block;
     justify-self: center;
 }
+
 .logo {
  width: 230px;
  padding: 10px;
+ 
 }
 .ingresar {
   border-radius: 30px;
@@ -64,27 +69,24 @@ html {
                              /****   PANTALLA PRINCIPAL  */
 
 .home {
-  background: url(/proyecto-m-dulo1/imagenes/fondo\ HOME.png);
+  background: url(/imagenes/fondo\ HOME.png);
   background-repeat: no-repeat;
-  height: 600px;   
-
+  height: 600px;     
   background-position: top;
   text-align: center;
   background-size: 100%;
+  padding-top: 100px;
   
-  
- 
 }
 .home h3 {
   font-size: 3.5rem;
-  margin: 0px 30px 30px;
-  padding: 30px  30px  0px;;
-  color:#ffffff
-  
+  margin: 0px 30px 10px;
+  padding: 10px  30px  0px;
+  color:#ffffff;
 }
 .home p {
   font-size: 2rem;
-  padding: 10px;
+  padding: 0px 10px;
   color:#ffffff
 }
 .botoncontactohome {
@@ -127,8 +129,14 @@ h3 {
  align-content: center;
  width: 100%;
  height: 350px;
- padding: 0px 300px 3px 300px;
+ padding: 50px 300px 5px 300px;
 
+ 
+
+}
+.seccionDePlanes {
+      padding: 100px 0px 0px 0px;
+  
 }
 .cards {
 display: grid;
@@ -205,7 +213,7 @@ button:active {
   row-gap: 10px;
   width: 1400;
   justify-self: center;
-  padding: 40px , 0px;
+  padding: 100px , 0px;
   align-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -224,6 +232,9 @@ section {
   font-size: 2.5rem;
   text-align: center;
   padding: 20px;
+  width: auto;
+   padding-top: 100px;
+  
 }
 section h3 {
   font-size: 2.5rem;
@@ -238,6 +249,7 @@ footer {
   background: rgb(30,1,70);
   background: linear-gradient(90deg, rgba(30,1,70,1) 0%, rgba(182,0,117,1) 77%);
   width: 100%;
+  height:500px;
   padding: 10px 250px;
   padding-bottom: 30px;
   display:block;
@@ -291,7 +303,7 @@ footer button:hover {
   font-size: 1.7rem;
 }
 footer button:active {
-background-color: var(--violeta);
+  background-color: var(--violeta);
   border-color:  var(--violeta);
   box-shadow: 0px 0px 20px 3px rgb(18, 0, 19);
   color:rgb(241, 230, 242); 
