@@ -15,25 +15,20 @@ html {
     --celeste: #0AE9FE;
 }
                             /****  HEADER Y MENU DE NAVEGACION  */
-.header ::after{
 
-}
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'logo nav ingresar';
     justify-items: center;
-    align-items: center;
-    background: rgb(30,1,70);
+    align-items: center;   
     background: linear-gradient(90deg, rgba(30,1,70,1) 0%, rgba(182,0,117,1) 0%, rgba(30,1,70,1) 40%);
     font-size: 0.6rem;
-    color: #ffffff;
-    padding: 40px , 0px;
-    position:fixed;
+    color: #ffffff;    
+    position: fixed;
     width: 100%;
     height: 85px;
  }
-
 .nav li {
     font-size: 1.7rem;
     margin: 10px 10;
@@ -43,7 +38,6 @@ html {
     justify-self: center;
     text-decoration: none;
 }
-
 .logo {
  width: 195px;
  padding: 0px;
@@ -61,13 +55,11 @@ html {
 .ingresar:hover {
   background-color: var(--violetamedio);
   border-color:  var(--violetamedio);
-  box-shadow: 0px 0px 20px 3px rgb(18, 0, 19);
   color:#F9CBD1; 
 }
 .ingresar:active {
   background-color: var(--violeta);
   border-color:  var(--violeta);
-  box-shadow:  0px 0px 20px 3px rgb(18, 0, 19);
   color:#F9CBD1; 
 }
                              /****   PANTALLA PRINCIPAL  */
@@ -105,13 +97,11 @@ html {
 .botoncontactohome:hover {
   background-color: var(--violetamedio);
   border-color:  var(--violetamedio);
-  box-shadow: 0px 0px 20px 3px rgb(18, 0, 19);
   color:#F9CBD1; 
 }
 .botoncontactohome:active {
   background-color: var(--violeta);
   border-color:  var(--violeta);
-  box-shadow: 0px 0px 20px 3px rgb(18, 0, 19);
   color:#F9CBD1; 
 }
 h3 {
@@ -123,22 +113,19 @@ h3 {
   
 }
                             /****   PANTALLA PLANES CARDS  */
- section .sectionDePlanes {
-  
- }
+
 .planes {
  display: grid;
- grid-template-columns:repeat(3, 1fr);
- grid-template-rows: 1fr;
+ grid-template-areas: ' cards cards cards ';
+ grid-template-columns: 1fr 1fr 1fr;
  column-gap: 15px;
  justify-content: center;
+ justify-self: center;
  align-content: center;
- width: 1300px;
- height: 350px;
+ width: 100%;
  padding: 30px 300px 30px 300px;
  
 }
-
 .cards {
 display: grid;
 box-shadow: 15px 15px 45px 3px rgba(133, 133, 133, 1);
@@ -149,7 +136,7 @@ padding: 10px;
 }
 .cards hr {
    background-color: #1E0146;
-   height: 2px;px;
+   height: 2px;
    border-color:#1E0146;
    margin: 0px 30px;
 }
@@ -189,11 +176,10 @@ button {
   color: var(--violeta);
   
 }
-button:hover {
+button :hover {
   background: rgb(30,1,70);
   color:#F9CBD1; 
   border-radius: 30px;
-  background border:none;
   border:none; 
   font-family: Helvetica;
   font-size: 1.7rem;
@@ -212,8 +198,9 @@ button:active {
   grid-template-rows: repeat(4, 1fr);
   column-gap: 10px;
   row-gap: 10px;
-  width: 1400;
+  width: 1030px;
   justify-self: center;
+ 
   padding: 100px , 0px;
   align-content: center;
   align-items: center;
@@ -233,7 +220,7 @@ section {
   font-size: 2.5rem;
   text-align: center;
   padding: 20px;
-  width: auto;
+  width: 100%;
   padding-top: 100px;
   
 }
@@ -251,9 +238,9 @@ footer {
   background: linear-gradient(90deg, rgba(30,1,70,1) 0%, rgba(182,0,117,1) 77%);
   width: 100%;
   height:520px;
-  padding: 10px 250px;
-  padding-bottom: 30px;
-  display:block;
+  margin-top: 30px;
+  padding: 60px 250px 60px 250px;
+  display: block;
   text-align: center;
 }
 footer h3 {
@@ -294,11 +281,10 @@ footer p {
   color:#ffffff;
   text-align: center;
 }
-footer button:hover {
+footer button :hover {
   background: rgb(30,1,70);
   color:#F9CBD1; 
   border-radius: 30px;
-  background border:none;
   border:none; 
   font-family: Helvetica;
   font-size: 1.7rem;
