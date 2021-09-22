@@ -112,32 +112,29 @@ html {
 }
 h3 {
   font-size: 2.5rem;
-  margin: 10px;
+  margin: 100px 10px 0px;
   padding: 10px;
   color: #1E0146;
   text-align: center;
-  margin-top: 20px;
+  
 }
                             /****   PANTALLA PLANES CARDS  */
-
+ section .sectionDePlanes {
+  
+ }
 .planes {
  display: grid;
  grid-template-columns:repeat(3, 1fr);
- grid-template-rows: repeat(1, 1fr);
+ grid-template-rows: 1fr;
  column-gap: 15px;
  justify-content: center;
  align-content: center;
- width: 100%;
+ width: 1300px;
  height: 350px;
- padding: 50px 300px 5px 300px;
-
+ padding: 30px 300px 30px 300px;
  
+}
 
-}
-.seccionDePlanes {
-      padding: 100px 0px 0px 0px;
-  
-}
 .cards {
 display: grid;
 box-shadow: 15px 15px 45px 3px rgba(133, 133, 133, 1);
@@ -233,7 +230,7 @@ section {
   text-align: center;
   padding: 20px;
   width: auto;
-   padding-top: 100px;
+  padding-top: 100px;
   
 }
 section h3 {
@@ -249,7 +246,7 @@ footer {
   background: rgb(30,1,70);
   background: linear-gradient(90deg, rgba(30,1,70,1) 0%, rgba(182,0,117,1) 77%);
   width: 100%;
-  height:500px;
+  height:520px;
   padding: 10px 250px;
   padding-bottom: 30px;
   display:block;
