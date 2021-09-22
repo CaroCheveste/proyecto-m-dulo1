@@ -15,22 +15,25 @@ html {
     --celeste: #0AE9FE;
 }
                             /****  HEADER Y MENU DE NAVEGACION  */
-  
+.header ::after{
+
+}
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'logo nav ingresar';
     justify-items: center;
     align-items: center;
-    background-color: #1E0146;
+    background: rgb(30,1,70);
+    background: linear-gradient(90deg, rgba(30,1,70,1) 0%, rgba(182,0,117,1) 0%, rgba(30,1,70,1) 40%);
     font-size: 0.6rem;
     color: #ffffff;
     padding: 40px , 0px;
     position:fixed;
     width: 100%;
-    height: 100px;
- 
-}
+    height: 85px;
+ }
+
 .nav li {
     font-size: 1.7rem;
     margin: 10px 10;
@@ -38,11 +41,12 @@ html {
     padding-right: 20px;
     display: inline-block;
     justify-self: center;
+    text-decoration: none;
 }
 
 .logo {
- width: 230px;
- padding: 10px;
+ width: 195px;
+ padding: 0px;
  
 }
 .ingresar {
