@@ -65,7 +65,7 @@ html {
                              /****   PANTALLA PRINCIPAL  */
 
 .home {
-  background: url(/imagenes/fondo\ HOME.png);
+  background: url(/proyecto-m-dulo1/imagenes/fondo\ HOME.png);
   background-repeat: no-repeat;
   height: 600px;     
   background-position: top;
